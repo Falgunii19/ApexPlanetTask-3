@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Responsive Carousel · Quiz · Weather & Jokes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Advanced Web Project</h1>
+    <p>Responsive • Carousel • Quiz • Weather & Jokes</p>
+  </header>
+
+
+  <section class="carousel-section">
+    <h2>Image Carousel</h2>
+    <div class="carousel" aria-roledescription="carousel">
+      <button class="prev" aria-label="Previous image">❮</button>
+      <div class="carousel-viewport">
+        <div class="carousel-track">
+          <img src="https://picsum.photos/id/1015/900/500" alt="Landscape 1">
+          <img src="https://picsum.photos/id/1016/900/500" alt="Landscape 2">
+          <img src="https://picsum.photos/id/1018/900/500" alt="Landscape 3">
+        </div>
+      </div>
+      <button class="next" aria-label="Next image">❯</button>
+      <div class="dots" aria-hidden="false"></div>
+    </div>
+  </section>
+
+
+  <section class="quiz-section">
+    <h2>Quiz App</h2>
+    <div id="quiz">
+      <p id="question" class="question"></p>
+      <div id="options" class="options" role="list"></div>
+
+      <div class="quiz-controls">
+        <button id="nextBtn" disabled>Next</button>
+      </div>
+
+      <p id="feedback" class="feedback" aria-live="polite"></p>
+      <p id="finalScore" class="final-score"></p>
+    </div>
+  </section>
+
+
+  <section class="api-section">
+    <h2>Weather & Jokes</h2>
+
+    <div class="api-box">
+      <h3>Weather</h3>
+      <div class="weather-form">
+        <input id="placeInput" type="text" placeholder="Enter city or place (e.g., London)" />
+        <button id="getWeatherBtn">Get Weather</button>
+      </div>
+      <div id="weatherResult" class="weather-result">Enter a place and click Get Weather.</div>
+    </div>
+
+    <div class="api-box">
+      <h3>Random Joke</h3>
+      <div id="joke" class="joke">Loading a joke...</div>
+      <button id="jokeBtn">Get Another Joke</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>Made with ❤️ — HTML, CSS & JS</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
